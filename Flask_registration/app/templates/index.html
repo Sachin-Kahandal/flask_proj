@@ -1,0 +1,40 @@
+{% extends "layout.html" %} {% block contents %}
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+    <div class="w3-container" style="text-align: center">
+
+        <p>Demo Project</p>
+
+    </div>
+    <br><br><br>
+    <div class="w3-container" style="text-align: center">
+        <div class="w3-show-inline-block">
+            <div class="w3-bar">
+                <form action="/signup" method="GET">
+                    <button type="submit" class="btn btn-success">Signup</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="w3-show-inline-block">
+            <div class="w3-bar">
+                <form action="/login" method="GET">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+{% endblock %}

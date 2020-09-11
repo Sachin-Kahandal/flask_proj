@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block contents %}
+<div class="container" style="text-align: center">
+    <p>Demo Project - Home Page</p>
+    <br>
+    <p>Hi {{ fullname }}, you are logged in</p>
+
+</div>
+<div class="container" style="text-align: center">
+
+    <div class="fetch" id="fetch1">
+        <button type="button" id="button1" class="btn btn-primary">Fetch Address</button>
+    </div>
+    <div class="show" style="display: none" id="show1">
+        <p>Your address is -</p>
+        <p> {{ address }} </p>
+    </div>
+
+
+    <br>
+
+    <form action="logout" method="GET">
+        <button type="submit" class="btn btn-success">Logout</button>
+    </form>
+</div>
+<script type="text/javascript">
+    document.getElementById("button1").onclick = function() {
+        document.getElementById("fetch1").style.display = "none";
+        document.getElementById("show1").style.display = "block";
+    }
+    document.getElementById("button1").on = function() {
+        document.getElementById("show1").style.display = "none";
+    }
+</script>
+
+<br> {% endblock %}

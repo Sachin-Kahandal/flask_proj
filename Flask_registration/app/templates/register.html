@@ -1,0 +1,34 @@
+{% extends "layout.html" %} {% block contents %}
+<br>
+<div class="container" style="text-align: center">
+    <p><b>Demo Project - Sign up</b></p>
+</div><br>
+<div class="container" style="text-align: center">
+    <form method="POST" action="/signup" style="display: inline-block; text-align: left">
+        <div class="form-group">
+            <label style="text-align: left"><b>Full Name</b></label>
+            <input type="text" class="form-control" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label><b>Email</b></label>
+            <input type="text" class="form-control" name="email" required>
+        </div>
+        <div class="form-group">
+            <label><b>Password</b></label>
+            <input type="password" class="form-control" name="password" required>
+        </div>
+        <div class="form-group">
+            <label><b>Confirm Password</b></label>
+            <input type="password" class="form-control" name="confirm" required>
+        </div>
+        <div class="form-group">
+            <label><b>Address</b></label>
+            <input type="text" class="form-control" name="address" required><br>
+        </div>
+        <div class="clearfix">
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </div>
+
+    </form>
+</div>
+{% endblock %}

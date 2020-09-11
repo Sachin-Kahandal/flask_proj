@@ -1,0 +1,19 @@
+{% extends "layout.html" %} {% block contents %}
+<br>
+<div class="container" style="text-align: center">
+    <p><b>Demo Project - Login</b></p>
+</div><br>
+<div class="container" style="text-align: center">
+    <form action="#" method="post" style="display: inline-block; text-align: left">
+        <div class="form-group">
+            <label><b>Email</b></label>
+            <input type="text" class="form-control" name="email" required>
+        </div>
+        <div class="form-group">
+            <label><b>Password</b></label>
+            <input type="password" class="form-control" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+</div>
+
+{% endblock %}
