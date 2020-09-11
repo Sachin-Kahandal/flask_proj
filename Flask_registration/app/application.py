@@ -6,7 +6,7 @@ from passlib.hash import sha256_crypt # for encrypting user
 import re # regular expression for email validation
 
 # connecting existing database
-engine = create_engine("postgresql+psycopg2://postgres:1234@localhost/zinrelodb")
+engine = create_engine("postgresql+psycopg2://postgres:1234@localhost/zendb")
 db = scoped_session(sessionmaker(bind=engine))
 
 application = app = Flask(__name__)

@@ -1,6 +1,6 @@
 import psycopg2
 
-connection = psycopg2.connect(user="postgres",password="1234",host="127.0.0.1",port=5432,database="zinrelo")
+connection = psycopg2.connect(user="postgres",password="1234",host="127.0.0.1",port=5432,database="zen")
 cursor = connection.cursor()
 
 account = ("""CREATE TABLE IF NOT EXISTS "member"
